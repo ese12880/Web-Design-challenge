@@ -1,0 +1,78 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Responsive Columns</title>
+      <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="brand">
+      <a class="btn btn-primary" href="index.html" role="button"><h3>Latitude</h3></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Max_Temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="Comparison.html">Comparison </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html">Data</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container-fluid">
+    <div class="row rowmain">
+    <div class="col-md-8">
+        <div class="card border-primary mb-3">
+            <div class="card-header"><strong><h1>Summary Latitude Vs X</h1></strong></div>
+            <div class="card-body text-primary">
+              <img width=300px height=300px src="C:\Users\ese12\OneDrive\Desktop\Web-Design-challenge\Assets\images\Fig1.png" align="left" /><p>In this Project we used Google API and Open Weather API to get the weather details of 500+ cities randomly selected. With the help of Citypy package we extracted 500+ random cities near the equator. longitude and latitude was sent to openweather API to get the weather details.,   </p>
+              <p class="card-text">After getting the weather details, we created the summary of the weather per city and used scatter plot to plot the results- City Latitude Vs Max Temperature, City Latitude Vs Humidity, City Latitude Vs Cloudiness and City Latitude Vs Wind Speed. After this we performed Linear regression on north and south hemisphear data.</p>
+              <p class="card-text"> After this we performed Linear regression on north and south hemisphear data for all the weather results received by above API.</p>
+            </div>
+    </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card border-primary mb-3">
+                <div class="card-header"><h1>Visualization</h1></div>
+                <div class="card-body text-primary">
+                <div class="column">
+                  <a href="Max_Temperature.html"> <img  src="C:\Users\ese12\OneDrive\Desktop\Web-Design-challenge\Assets\images\Fig1.png" alt="vs. Max Temperature"/></a> 
+                  <a href="Humidity.html"><img src="C:\Users\ese12\OneDrive\Desktop\Web-Design-challenge\Assets\images\Fig2.png" alt=" Humidity"/></a>
+                  <a href="Cloudiness.html"><img src="C:\Users\ese12\OneDrive\Desktop\Web-Design-challenge\Assets\images\Fig3.png"alt=" Coludiness"/></a>
+                  <a href="Wind_Speed.html"><img src="C:\Users\ese12\OneDrive\Desktop\Web-Design-challenge\Assets\images\Fig4.png"alt=" Wind Speed"/></a>
+                </div>
+        </div>
+      </div>   
+        </div>
+    </div>
+    <div class="row rowfoot">
+        <div class="col-md-12">
+        </div>
+    </div>
+    </div>
+  </div>
+    
+    </body>
+    </html>        
