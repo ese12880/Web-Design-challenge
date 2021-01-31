@@ -1,1 +1,3 @@
 # Web-Design-challenge
+
+For this project, I created the 7 webpages using HTML and CSS, as well as bootstrap. With those tools, the pages were designed and linked togeter. All the various links work and images are visiable with relative file paths, as well as links. Pages follow the bootstrap grid.  Media queries make sure the pages adapt to sizes correctly.  Bootstrap created the navigation bar at the top with dropdown menu and working links. I attempted to get the pages live on the internet. I even named the repository "(username).github.io" so it would recognize that it was going to be published online.  Unfortuneatly, I just got 404 errors and I could not figure out how to get them live online. Otherwise, all other requirements seem to be met. 
